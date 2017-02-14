@@ -11,7 +11,7 @@ O projeto consiste de um circuito temporizador e controlador de corrente impleme
 Inicialmente, foi proposto um circuito que apenas mede a corrente atual a partir do sensor não-invasivo, e quando uma corrente máxima pré-definida fosse atingida, o aparelho seria desligado. Com o passar do tempo, com o aprendidado e o aprofundamento das bibliotecas do Arduino, pensamos também em incluir uma função de temporizador para o circuito, algo que julgamos ser de relevancia para um circuito do tipo.
 
 ### Materiais
-**Arduino MEGA 2560:** a plataforma selecionada para o projeto, que utiliza o microcontrolador da Atmel
+**Arduino MEGA 2560:** a plataforma selecionada para o projeto, que utiliza o microcontrolador da Atmel ATmega 2560.
  
  <img src="https://github.com/testeminas/teste/blob/master/Imagens/arduino-mega.jpg" width="500">
 
