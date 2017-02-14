@@ -15,7 +15,7 @@ Inicialmente, foi proposto um circuito que apenas mede a corrente atual a partir
  
  <img src="https://github.com/testeminas/teste/blob/master/Imagens/arduino-mega.jpg" width="500">
 
-**LCD Keypad Shield:** cosiste de um display LCD 16x2 com backlight azul, 5 botões (select,up,down,right,left) além de um botão de reset, utilizado aqui para receber comandos e exibir informações ao usuário.
+**LCD Keypad Shield:** consiste de um display LCD 16x2 com backlight azul, 5 botões (select,up,down,right,left) além de um botão de reset, utilizado aqui para receber comandos e exibir informações ao usuário.
  
   <img src="https://github.com/testeminas/teste/blob/master/Imagens/lcd-shield.jpg" width="500">
   
