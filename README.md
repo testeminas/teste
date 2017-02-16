@@ -36,8 +36,15 @@ Para o uso do medidor de corrente não-invasivo, foi utilizada a biblioteca emon
 Junto com o shield LCD, temos um pequeno keypad feito por pushbuttons, onde a leitura de qual botão foi pressionado é feita por apenas um pino analógico pela função *leituraBotao*. Isso é possível, foi eles estão ligados por resistores formando um divisor de tensão, como mostra a figura abaixo, assim a cada botão pressionado é lido um valor diferente no pino analógico.
 
 
+  <img src="https://github.com/testeminas/teste/blob/master/Imagens/shield-lcd-keypads.jpg" width="500">
 
+Com isso, foi possível criar toda uma interface onde é possível entrar com as horas e os minutos que o usuário deseja manter o equipamento ligado, ou ainda escolher uma corrente máxima (em até uma casa decimal) para o funcionamento seguro do mesmo. Outro detalhe importante, é o uso da função *millis()* (https://www.arduino.cc/en/reference/millis) para medir o tempo. Ela retorna o número de milisegundos desde que o Arduino foi ligado, e com isso podemos usar ela para medir o tempo restante da seguinte forme:
 
+*tempoRestante = tempoSetado - (millis() - tempoInicio)*
+
+onde *tempoSetado* guarda o tempo inicialmente desejado pelo usuário, *tempoInicio* o valor que a função *millis* retornou quando o tempo foi setado (isto é, o "horário" que essa configuração foi feita), e *millis()* retorna o "horário". Vale notar quee segundo a referência da função *millis()*, esse valor terá *overflow* se o mesmo ficasse ligado por aproximadamente 50 dias.
+
+Finalmente, o relé é quem faz o papel de chave de liga e desliga do equipamento, com base no tempo restante e corrente atual dentro do intervalo permitido. Por fim, todo o circuito foi montado numa prancheta de madeira, para além de facilitar o manuseiro, dar um acabamento de produto ao circuito.
  
 ### Grupo
  - Bruno Padua
