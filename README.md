@@ -30,6 +30,15 @@ Inicialmente, foi proposto um circuito que apenas mede a corrente atual a partir
  
 **Outros componentes:** resistores, capacitor, cabos, conectores, entre outros
 
+### Implementação
+Para o uso do medidor de corrente não-invasivo, foi utilizada a biblioteca emonLib (https://github.com/openenergymonitor/EmonLib), de monitoramento de energia. Com isso, toda a medição fica a cargo da biblioteca, e a leitura é feita a partir de uma única função. Também foi utilizada a biblioteca LiquidCrystal (https://www.arduino.cc/en/Reference/LiquidCrystal), que já vem inclusa na IDE do Arduino para a criação de uma interface para o usuário poder visualizar informações e configurar seu funcionamento, sem a necessidade de estar ligado com algum computador.
+
+Junto com o shield LCD, temos um pequeno keypad feito por pushbuttons, onde a leitura de qual botão foi pressionado é feita por apenas um pino analógico pela função *leituraBotao*. Isso é possível, foi eles estão ligados por resistores formando um divisor de tensão, como mostra a figura abaixo, assim a cada botão pressionado é lido um valor diferente no pino analógico.
+
+
+
+
+ 
 ### Grupo
  - Bruno Padua
  - João Guilherme Luchetti 
